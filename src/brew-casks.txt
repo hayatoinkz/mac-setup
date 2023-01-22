@@ -1,0 +1,14 @@
+iterm2
+1password
+android-file-transfer
+android-platform-tools
+brave-browser
+cleanshot
+discord
+fig
+figma
+insomnia
+raycast
+slack
+vlc
+visual-studio-code

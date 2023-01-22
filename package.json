@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "mac-setup",
+  "version": "1.0.0",
+  "description": "This repository contains info on all the Apps / Tools / Settings I use on my Mac.",
+  "scripts": {
+    "predev": "npm i",
+    "toc": "doctoc README.md --github",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "macos",
+    "ansible",
+    "setup",
+    "playbook",
+    "guide"
+  ],
+  "author": "Vinicius Rocha <vinicius.workspace@gmail.com> (https://solo.to/hayato.eth/)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hayato-eth/mac-setup.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/config-conventional": "^17.4.2",
+    "commitlint": "^17.4.2",
+    "doctoc": "^2.2.1",
+    "husky": "^8.0.3"
+  }
+}
