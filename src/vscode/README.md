@@ -104,156 +104,160 @@ These are the extensions I have installed most of the time:
 
 ```json
 {
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/*.code-search": true
-  },
-  "search.useIgnoreFiles": false,
-  "explorer.openEditors.visible": 0,
-  "editor.linkedEditing": true,
-  "editor.snippetSuggestions": "top",
-  "emmet.showAbbreviationSuggestions": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnPaste": false,
-  "workbench.colorTheme": "Just Black",
-  "workbench.iconTheme": "vscode-icons",
+  // Theme Setup Settings
+  "workbench.colorTheme": "Shades of Purple (Super Dark)",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "JetBrainsMono Nerd Font, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "terminal.integrated.fontSize": 24,
-  "files.autoSave": "off",
-  "editor.fontFamily": "Anonymous Pro",
-  "markdown.preview.fontSize": 36,
+  "editor.fontSize": 16,
+  "editor.fontWeight": "600",
+  "editor.lineHeight": 24,
   "editor.tabSize": 2,
-  "editor.detectIndentation": true,
-  "editor.minimap.enabled": false,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "eslint.enable": true,
-  "eslint.validate": ["vue", "react", "typescript", "html", "javascript"],
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 5,
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.showMethods": true,
+  "editor.suggest.preview": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.accessibilitySupport": "off",
+  "explorer.compactFolders": false,
+  "workbench.tree.indent": 15,
   "workbench.startupEditor": "newUntitledFile",
-  "editor.suggestSelection": "first",
+  "editor.glyphMargin": true,
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+
+  // Formatting Optional.
+  "terminal.integrated.fontSize": 14,
+  "editor.rulers": [120, 150],
+  "editor.renderLineHighlight": "gutter",
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "eslint.run": "onType",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[css]": {
+  "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "[typescriptreact]": {
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorCustomizations": {},
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": ["comment", "comment.block"],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#ff1493"
-        }
-      },
-      {
-        "scope": [
-          "keyword.operator.logical",
-          "keyword.operator.arithmetic",
-          "keyword.operator.assignment",
-          "keyword.operator.bitwise"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "scope": ["comment", "comment.block"],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#ff1493"
-        }
-      },
-      {
-        "scope": [
-          "keyword.operator.logical",
-          "keyword.operator.arithmetic",
-          "keyword.operator.assignment",
-          "keyword.operator.bitwise"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "scope": ["comment", "comment.block"],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#ff1493"
-        }
-      },
-      {
-        "scope": [
-          "keyword.operator.logical",
-          "keyword.operator.arithmetic",
-          "keyword.operator.assignment",
-          "keyword.operator.bitwise"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "scope": ["comment", "comment.block"],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#ff1493"
-        }
-      },
-      {
-        "scope": [
-          "keyword.operator.logical",
-          "keyword.operator.arithmetic",
-          "keyword.operator.assignment",
-          "keyword.operator.bitwise"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "name": "envKeys",
-        "scope": "string.quoted.double.env,source.env,constant.numeric.env",
-        "settings": {
-          "foreground": "#19354900"
-        }
-      }
-    ]
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.ignoreMissingGitWarning": true,
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "git.suggestSmartCommit": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
   },
   "git.autofetch": true,
-  "editor.lineHeight": 0,
-  "editor.fontSize": 23,
-  "window.zoomLevel": 2,
-  "vsicons.dontShowNewVersionMessage": true,
-  "extensions.ignoreRecommendations": true
+  "git.confirmSync": false,
+  "editor.suggestSelection": "first",
+  "dart.showSkippedTests": false,
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "discord.removeDetails": true,
+  "discord.removeLowerDetails": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "react-native-tools.showUserTips": false,
+  "tabnine.experimentalAutoImports": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // MacOS Only Settings.
+  "workbench.fontAliasing": "auto",
+  "terminal.integrated.macOptionIsMeta": true,
+  "workbench.statusBar.feedback.visible": false,
+  // The default syntax (TextMate) highlighter classifies many tokens as variables and these are now (since VSCode 1.43) resolved into namespaces, classes, parameters, and so on. This is called Semantic highlighting support for TypeScript and JavaScript. But many themes and language extensions seem broken with single-colored syntax. This came as a surprise to me. It's set `true` by default. I recommend disabling this for now.
+  "editor.semanticHighlighting.enabled": false,
+  // SOP's highlight matching tag setting.
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "full": {
+        "highlight": "rgba(165, 153, 233, 0.3)"
+      }
+    }
+  },
+
+  // SOP's Import Cost Extension Settings.
+  "importCost.largePackageColor": "#EC3A37F5",
+  "importCost.mediumPackageColor": "#B362FF",
+  "importCost.smallPackageColor": "#B362FF",
+
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ]
 }
 ```
 
